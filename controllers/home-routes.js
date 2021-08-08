@@ -1,6 +1,6 @@
 const router = require("express").Router();
 
-router.get("/homepage", (req, res) => {
+router.get("/", (req, res) => {
   res.render("homepage");
 });
 
@@ -16,22 +16,14 @@ router.get("/signin", (req, res) => {
   res.render("signin");
 });
 
-// router.get("/tracker", (req, res) => {
-//   res.render("tracker")
-// })
-
-router.get("/tracker/running?workout=running", (req, res) => {
+router.get("/tracker", (req, res) => {
   res.render("tracker");
 });
 
-router.get("/tracker/running?workout=pullup", (req, res) => {
-  res.render("pullup");
-});
+// router.get("/", (req, res) => {
+//   console.log(req.session);
 
-router.get("/", (req, res) => {
-  console.log(req.session);
-
-  // other logic...
-});
+//   // other logic...
+// });
 
 module.exports = router;
