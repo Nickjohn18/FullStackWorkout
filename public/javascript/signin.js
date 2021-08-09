@@ -6,7 +6,7 @@ function loginFormHandler(event) {
 
   if (email && password) {
     fetch("/workout/users/login", {
-      method: "get",
+      method: "post",
       body: JSON.stringify({
         email,
         password,

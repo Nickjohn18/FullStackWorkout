@@ -32,7 +32,7 @@ router.post("/", (req, res) => {
 });
 
 //route for signing in
-router.post("/login", (req, res) => {
+router.post("workout/users/login", (req, res) => {
   // expects {email: 'lernantino@gmail.com', password: 'password1234'}
   Users.findOne({
     where: {
