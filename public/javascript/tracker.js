@@ -46,7 +46,7 @@ runningChart = () => {
       console.log(response);
     })
     .then((response) => {
-      document.location.replace("/tracker/pullups");
+      document.location.replace("/tracker/running");
       //   res.JSON(response)
       console.log(response);
     });
@@ -55,3 +55,5 @@ runningChart = () => {
 document
   .querySelector("#tracker-form")
   .addEventListener("submit", startFunction);
+
+runningChart();
